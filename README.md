@@ -1,4 +1,5 @@
 # SER515-Fall22-Team4
+# ICA 7: Design Patterns
 
 Github Link - https://github.com/ryancollinsnc/SER515-Fall22-Team4
 
@@ -16,7 +17,7 @@ Design Patterns:
 
 Builder Pattern was implemented to create various templates of the syllabus - in this case CS and SE Syllabus.
 
-Decorator Pattern was used to modify the createSyllabus() function to instead fetch old syllabus details.
+Decorator Pattern was used to modify the createSyllabus() function to fetch old syllabus details.
 
 Adaptor Pattern was used to translate the publishSyllabusService() function to the equivalent Canvas service, publishSyllabusCavnas().
 
