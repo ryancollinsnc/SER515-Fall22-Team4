@@ -8,51 +8,52 @@ public class SyllabusGeneratorFacade {
 	private ClassCourseList theCourseList;
 
 	public Syllabus createSyllabus() {
-		Syllabus s = new Syllabus();
-		return s;
-	}
-
-	public void addSyllabusModule() {
-
-	}
-
-	public void modifySyllabus(Syllabus syllabus) {
-
-	}
-
-	public void addPolicy() {
-
-	}
-
-	public void selectCourse() {
-
-	}
-
-	public void attachCourseToUser() {
-
-	}
-
-	public static void main(String[] args) {
-		int opt = menu();
-		int ins_opt=0;
-		if(opt==1){
-			ins_opt = instructorMenu();
+		Scanner op = new Scanner(System.in);
+		Scanner inp = new Scanner(System.in);
+		String details, content;
+		Creator sylc;
+		System.out.println("\nEnter Option:\n1) CS Syllabus\n2) SE Syllabus");
+		int opt = inp.nextInt();
+		switch (opt) {
+			case 1:
+				System.out.println("\nEnter course details:");
+				details = op.nextLine();
+				System.out.println("\nEnter course content:");
+				content = op.nextLine();
+				SyllabusPatternOne newsyl_one = new SyllabusPatternOne(details, content, "These are uni policies");
+				sylc = new Creator(newsyl_one);
+				sylc.createSyllabus();
+				newsyl_one.displaySyllabus();
+				return sylc.getSyllabus();
+			case 2:
+				System.out.println("\nEnter course details:");
+				details = op.nextLine();
+				System.out.println("\nEnter course content:");
+				content = op.nextLine();
+				SyllabusPatternTwo newsyl_two = new SyllabusPatternTwo(details, content, "These are uni policies");
+				sylc = new Creator(newsyl_two);
+				sylc.createSyllabus();
+				newsyl_two.displaySyllabus();
+				return sylc.getSyllabus();
 		}
-		System.out.println(opt + " "+ ins_opt);
+		return new Syllabus();
 	}
 
-	public static int menu(){
+	public Syllabus getOldSyllabus() {
 		Scanner inp = new Scanner(System.in);
-		System.out.println("Enter Role:\t1)Course Instructor\t2) Program Chair");
+		System.out.println("\nEnter Option:\n1) 2021 SE Syllabus");
 		int opt = inp.nextInt();
-		return opt;
+		AddSyllabusModules syl_old = new AddSyllabusModules(new Syllabus());
+		syl_old.setDetails("");
+		syl_old.setContent("");
+		syl_old.setPolicies("");
+		syl_old.display();
+		return syl_old.getSyllabus();
 	}
 
-	public static int instructorMenu(){
-		Scanner inp = new Scanner(System.in);
-		System.out.println("\nEnter Option:\n1)Create New Syllabus\n2) Create from Existing Syllabus\n3)Publish Syllabus");
-		int opt = inp.nextInt();
-		return opt;
+	public void publishSyllabus(Syllabus s) {
+		PublishSyllabusCanvas pub = new Canvas();
+		PublishSyllabusService adapt = new PublishAdapter(pub);
+		adapt.publishService(s);
 	}
-
 }

@@ -1,6 +1,6 @@
 public interface PublishSyllabusService {
 
-	public abstract void publishService();
+	public abstract void publishService(Syllabus s);
 		
 	
 }

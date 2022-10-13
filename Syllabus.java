@@ -36,4 +36,11 @@ public class Syllabus implements CreateSyllabus {
 		return this.policies;
 	}
 
+	public Syllabus getSyllabus() {
+		Syllabus s = new Syllabus();
+		s.setDetails(this.details);
+		s.setContent(this.content);
+		s.setPolicies(this.policies);
+		return s;
+	}
 }

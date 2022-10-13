@@ -6,8 +6,8 @@ public class PublishAdapter implements PublishSyllabusService {
 		this.pub = pub;
 	}
 
-	public void publishService() {
-		pub.publishCanvas();
+	public void publishService(Syllabus s) {
+		pub.publishCanvas(s);
 	}
 
 }

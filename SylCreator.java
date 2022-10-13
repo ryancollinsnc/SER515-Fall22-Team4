@@ -8,6 +8,6 @@ public interface SylCreator {
 
 	public Syllabus getSyllabus();
 
-	public abstract void displaySyllabus();
+	public void displaySyllabus();
 
 }

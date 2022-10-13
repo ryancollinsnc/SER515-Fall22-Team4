@@ -29,5 +29,18 @@ public class AddSyllabusModules extends CreateSyllabusDecorator {
 	public void setPolicies(String policies) {
 		setOldSyllabusPolicy();
 	}
+	/*public String getDetails() {return decoratedSyllabus.getContent();}
+	public String getContent() {return decoratedSyllabus.getContent();}
+	public String getPolicies() {return decoratedSyllabus.getContent();}*/
+	public void display(){
+		System.out.println("Old Syllabus for SE2021");
+		System.out.println("\nCourse Details:\n" + decoratedSyllabus.getDetails());
+		System.out.println("\nCourse Content:\n" + decoratedSyllabus.getContent());
+		System.out.println("\nUniversity Policies:\n" + decoratedSyllabus.getPolicies());
+	}
+
+	public Syllabus getSyllabus(){
+		return decoratedSyllabus.getSyllabus();
+	}
 
 }

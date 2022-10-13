@@ -1,4 +1,4 @@
 public interface PublishSyllabusCanvas {
-	public void publishCanvas();
+	public void publishCanvas(Syllabus s);
 	
 }

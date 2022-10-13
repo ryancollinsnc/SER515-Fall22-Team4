@@ -29,7 +29,7 @@ public class SyllabusPatternTwo implements SylCreator {
 	}
 
 	public void displaySyllabus() {
-		System.out.println("\nSyllabus Pattern 1");
+		System.out.println("\nSyllabus Pattern for SE");
 		System.out.println("Course Details\n" + syllabus.getDetails());
 		System.out.println("\nCourse Content\n" + syllabus.getContent());
 		System.out.println("\nUniversity Policies\n" + syllabus.getPolicies());
