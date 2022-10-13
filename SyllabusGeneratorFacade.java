@@ -1,12 +1,5 @@
 import java.util.*;
 public class SyllabusGeneratorFacade {
-
-	private int UserType;
-
-	private Course theSelectedCourse;
-
-	private ClassCourseList theCourseList;
-
 	public Syllabus createSyllabus() {
 		Scanner op = new Scanner(System.in);
 		Scanner inp = new Scanner(System.in);

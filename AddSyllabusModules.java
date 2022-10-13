@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class AddSyllabusModules extends CreateSyllabusDecorator {
 
 	protected AddSyllabusModules(CreateSyllabus decoratedSyllabus) {
@@ -7,15 +5,15 @@ public class AddSyllabusModules extends CreateSyllabusDecorator {
 	}
 
 	private void setOldSyllabusDetails() {
-		decoratedSyllabus.setDetails("Old Syllabus Details");
+		decoratedSyllabus.setDetails("Old SE 2021 Syllabus Details");
 	}
 
 	private void setOldSyllabusContent() {
-		decoratedSyllabus.setContent("Old Syllabus Details");
+		decoratedSyllabus.setContent("Old SE 2021 Syllabus Details");
 	}
 
 	private void setOldSyllabusPolicy() {
-		decoratedSyllabus.setPolicies("Old Syllabus Policy");
+		decoratedSyllabus.setPolicies("Old SE 2021 Syllabus Policy");
 	}
 
 	public void setDetails(String details) {

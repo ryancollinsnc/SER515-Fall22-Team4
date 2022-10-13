@@ -6,7 +6,6 @@ public class Timer {
 	public void timerFunc() {
 		UniversityPortal updatesOnPolicies = null;
 		boolean chk_upd = checkUpdates();
-		System.out.println(chk_upd + " " + counter);
 		if(counter%24==0 && chk_upd== true){
 			updatesOnPolicies = UniversityPortal.getUpdates();
 			updatesOnPolicies.sendNotification();
@@ -14,6 +13,7 @@ public class Timer {
 		}
 		else{
 				System.out.println("No Updates");
+				updatesOnPolicies = null;
 				counter+= 12;
 		}
 	}

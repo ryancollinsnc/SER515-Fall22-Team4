@@ -1,13 +1,13 @@
 public interface SylCreator {
 
-	public void buildDetails();
+	void buildDetails();
 
-	public void buildContent();
+	void buildContent();
 
-	public void buildPolicies();
+	void buildPolicies();
 
-	public Syllabus getSyllabus();
+	Syllabus getSyllabus();
 
-	public void displaySyllabus();
+	void displaySyllabus();
 
 }
