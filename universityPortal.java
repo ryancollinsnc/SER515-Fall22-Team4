@@ -1,17 +1,18 @@
 public class universityPortal {
-
-	private universityPortal updatesOnPolicies;
+	
+	private static universityPortal updatesOnPolicies = new universityPortal();
 
 	private universityPortal() {
-
+		
 	}
 
 	public universityPortal getUpdates() {
-		return null;
+		
+         return updatesOnPolicies;
 	}
 
-	public universityPortal sendNotification() {
-		return null;
+	public void sendNotification() {
+		
+			System.out.println("Policies have been updated");
 	}
-
 }
