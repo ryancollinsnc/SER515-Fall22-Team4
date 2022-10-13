@@ -6,6 +6,10 @@ How to run program:
 
 1) Run the main() function from the Main class.
 
+2) Option 1 is the Course Instructor Menu where he is able to Create a new syllabus from scratch using existing templates, publish a created syllabus for review or modify an existing syllabus.
+
+3) Option 2 is a Timer function to demo the timer that will periodically check if policies have been updated. For demo purposes, keep running option 2 till it generates a true condition, simulating that the policies have been changed.
+
 
 
 Design Patterns:
