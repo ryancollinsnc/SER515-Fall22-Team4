@@ -21,7 +21,7 @@ Decorator Pattern was used to modify the createSyllabus() function to fetch old 
 
 Adaptor Pattern was used to translate the publishSyllabusService() function to the equivalent Canvas service, publishSyllabusCavnas().
 
-Facade Pattern was used to act as a controller class and wrap all the class functions in a single class for easy access by the Main Class to hide complexity of the code.
+Facade Pattern was used to act as a controller class and wrap all class functions in a single class for easy access by the Main Class to hide complexity of the code.
 
 Singleton Pattern was used to implement a University Policies class that uses a timer that will fetch policies from an external source. For demo purposes, we have used a random function to determine if policies have been changed or not.
 
