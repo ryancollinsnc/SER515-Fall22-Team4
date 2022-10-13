@@ -1,3 +1,5 @@
+// CreateSyllabusDecorator
+
 public class CreateSyllabusDecorator implements CreateSyllabus {
 
 	public CreateSyllabus decoratedSyllabus;
