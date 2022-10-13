@@ -3,7 +3,7 @@
 
 Github Link - https://github.com/ryancollinsnc/SER515-Fall22-Team4
 
-How to run program:
+How to run the program:
 
 1) Run the main() function from the Main class.
 
