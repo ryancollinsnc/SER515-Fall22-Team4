@@ -8,7 +8,7 @@ public class SyllabusGeneratorFacade {
 	private ClassCourseList theCourseList;
 
 	public Syllabus createSyllabus() {
-		Syllabus s = new Syllabus("hi", "hello", "when");
+		Syllabus s = new Syllabus();
 		return s;
 	}
 

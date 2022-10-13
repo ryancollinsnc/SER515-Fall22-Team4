@@ -4,7 +4,7 @@ public class AddSyllabusModules extends CreateSyllabusDecorator {
 
 	public AddSyllabusModule() {
 		super(syllabus);
-		this.syllabus = new Syllabus("hi", "hello", "when");
+		this.syllabus = new Syllabus();
 	}
 
 	private void setOldSyllabusDetails() {
