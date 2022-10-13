@@ -2,14 +2,12 @@ public class PublishAdapter implements PublishSyllabusService {
 
 	private PublishSyllabusCanvas pub;
 
-	private PublishSyllabusCanvas publishSyllabusCanvas;
-
 	public PublishAdapter(PublishSyllabusCanvas pub) {
-
+		this.pub = pub;
 	}
 
 	public void publishService() {
-
+		pub.publishCanvas();
 	}
 
 }
