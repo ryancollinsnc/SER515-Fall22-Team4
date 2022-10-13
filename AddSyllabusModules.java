@@ -1,3 +1,5 @@
+// AddSyllabusModules 
+
 public class AddSyllabusModules extends CreateSyllabusDecorator {
 
 	protected AddSyllabusModules(CreateSyllabus decoratedSyllabus) {
