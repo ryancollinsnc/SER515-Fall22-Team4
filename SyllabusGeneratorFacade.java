@@ -56,4 +56,9 @@ public class SyllabusGeneratorFacade {
 		PublishSyllabusService adapt = new PublishAdapter(pub);
 		adapt.publishService(s);
 	}
+
+	public void timer(){
+		Timer time = new Timer();
+		time.timerFunc();
+	}
 }

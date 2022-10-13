@@ -34,13 +34,16 @@ public class Main {
                             break;
                     }
                 } while (final_opt != 4);
+
+            }else if(opt == 2){
+                facade.timer();
             }
         }while (opt != 3);
     }
 
     public static int menu(){
         Scanner inp = new Scanner(System.in);
-        System.out.println("Enter Role:\t1) Course Instructor\t2) Program Chair\t3) Exit");
+        System.out.println("Enter Role:\t1) Course Instructor\t2) Timer\t3) Exit");
         return inp.nextInt();
     }
 
